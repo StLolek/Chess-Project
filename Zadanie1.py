@@ -24,6 +24,7 @@ while True:
 avgpergame = moves / games
 legalavgpermove = legalmoves / moves
 print("Zadanie 1. \n")
+print("Ilość gier wziętych pod uwagę: ",games)
 print("Średnia liczba wykonanych ruchów na gre: ", avgpergame)
 print("Średnia liczba dostępnych ruchów na ruch: ", legalavgpermove)
 print("\nZłożoność gry: ", avgpergame, "^", legalavgpermove, " = ", avgpergame ** legalavgpermove)
