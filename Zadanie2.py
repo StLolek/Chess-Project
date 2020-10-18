@@ -80,4 +80,4 @@ for i in range(ranger):
 
     print("Generacja ", i, " : ", valid)
 print("Średnia poprawności: ", validsum/ranger)
-print("\nZłożoność gry: ", (validsum * 64 ** 11) / ranger)
+print("\nZłożoność gry: ", ((validsum * 64 ** 11) / ranger)/i)
