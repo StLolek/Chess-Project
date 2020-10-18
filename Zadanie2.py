@@ -76,7 +76,8 @@ for i in range(ranger):
         fen = random_position()
         if chess.Board(fen).is_valid():
             valid += 1
-    validsum += (valid * (64 ** 11))
+    validsum += valid
 
     print("Generacja ", i, " : ", valid)
-print("\nZłożoność gry: ", validsum / ranger)
+print("Średnia poprawności: ", validsum/ranger)
+print("\nZłożoność gry: ", (validsum * 64 ** 11) / ranger)
