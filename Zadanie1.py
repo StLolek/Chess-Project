@@ -22,8 +22,9 @@ while True:
         moves += 1
     board.reset()
 avgpergame = moves / games
-print("Średnia liczba wykonanych ruchów na gre: ", avgpergame)
 legalavgpermove = legalmoves / moves
+print("Zadanie 1. \n")
+print("Średnia liczba wykonanych ruchów na gre: ", avgpergame)
 print("Średnia liczba dostępnych ruchów na ruch: ", legalavgpermove)
 print("\nZłożoność gry: ", avgpergame, "^", legalavgpermove, " = ", avgpergame ** legalavgpermove)
 print("\n--- %s seconds ---" % (time.time() - start_time))
