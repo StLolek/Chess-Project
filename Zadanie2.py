@@ -69,12 +69,14 @@ def random_position():
 
 ranger = 10
 validsum = 0
+print("Zadanie 2. \n")
 for i in range(ranger):
     valid = 0
     for j in range(1000):
         fen = random_position()
         if chess.Board(fen).is_valid():
             valid += 1
-    validsum += (valid * (64 ** 12 * 56 ** 2))
+    validsum += (valid * (64 ** 11))
+
     print("Generacja ", i, " : ", valid)
 print("\nZłożoność gry: ", validsum / ranger)
