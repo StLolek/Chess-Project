@@ -54,8 +54,6 @@ for j in range(5):
         else:
             break
 
-    print(board, '\n Wynik dla powyższej pozycji: ', negamax(board, 4
-
-                                                             , float('-inf'),float('inf'),board.turn))
+    print(board, '\n Wynik dla powyższej pozycji: ', negamax(board, 4, float('-inf'),float('inf'),board.turn))
 
 print("\n--- %s seconds ---" % (time.time() - start_time))
